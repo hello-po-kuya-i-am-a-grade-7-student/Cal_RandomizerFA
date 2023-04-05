@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escape Room</title>
+	<link rel="stylesheet" type="text/css" href="randomizer.css">
+    <script src="randomizer.js"></script>
+</head>
+<body>
+    <div id = "home">
+        <h1>Escape Room</h1>
+    <form action = "" method="GET">
+        <input type="button" class="button" value="Play" onclick="OnPlay(this.form)">
+    </form>
+    </div>
+	<div id = "play">
+        <h2> Results Summary</h2>
+    <div id = "resultbox">
+        <p id = "text"> These were the clue cards you were given at the beginning of the game</p>
+        <div id = "boxes">
+            <div id = "num1">
+                <p id = "n1"></p>
+            </div>
+            <div id = "num2">
+                <p id = "n2"></p>
+            </div>
+            <div id = "num3">
+                <p id = "n3"></p>
+            </div>
+        </div>
+        <p id = "text">To escape the room, you must find the right door among the several doors in the room, each with a different letter of the alphabet on it, and unlock it using the correct password.</p>
+        <div class="door">
+            
+            <div id = "knob"></div>
+            <p id = "num1letter"></p>
+        </div>
+        <p id = "text">The letter on the door that you should open is the first clue card: <span id = "n1letter"></span></p>
+        <p id = "text">The password needed to open the door is the largest number among all clue cards: <span id = "biggestnumber"></span></p>
+        <p id = "text">The time you took to escape the room: <span id = "time"></span></p>
+    </div>
+    <p id = "congrats"> Thank you for participating in our escape room challenge!</p>
+    <input type="button" class="button" value="Play Again?" onclick="PlayAgain()">
+    <br> <br>
+    </div>
+</body>
+</html>
